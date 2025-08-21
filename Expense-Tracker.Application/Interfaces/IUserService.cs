@@ -14,5 +14,8 @@ namespace Expense_Tracker.Application.Interfaces
         Task<User> CreateAsync(User user);
         Task<bool> UpdateAsync(int id, User user);
         Task<bool> DeleteAsync(int id);
+
+        Task<object> LoginAsync(LoginModel model);
+        Task<object> RefreshTokenAsync(TokenModel tokenModel);
     }
 }

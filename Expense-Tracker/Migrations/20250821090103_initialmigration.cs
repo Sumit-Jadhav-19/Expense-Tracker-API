@@ -32,6 +32,11 @@ namespace Expense_Tracker.Migrations
                 {
                     table.PrimaryKey("PK_Users", x => x.Id);
                 });
+
+            migrationBuilder.InsertData(
+                table: "Users",
+                columns: new[] { "Id", "CreatedAt", "Email", "IsActive", "IsEmailConfirmed", "Password", "RefreshToken", "RefreshTokenExpiryTime", "Role", "UpdatedAt", "UserName" },
+                values: new object[] { 1, new DateTime(2025, 8, 21, 9, 1, 2, 85, DateTimeKind.Utc).AddTicks(8390), "admin@test.com", true, false, "$2b$10$Csfm.dYXdyffA7yrbP48ve16v46jBl0SvAlo3zRbhcXl13ArOyRja", null, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Admin", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "admin" });
         }
 
         /// <inheritdoc />

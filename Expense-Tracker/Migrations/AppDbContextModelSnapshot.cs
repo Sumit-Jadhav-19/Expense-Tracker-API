@@ -67,6 +67,21 @@ namespace Expense_Tracker.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedAt = new DateTime(2025, 8, 21, 9, 1, 2, 85, DateTimeKind.Utc).AddTicks(8390),
+                            Email = "admin@test.com",
+                            IsActive = true,
+                            IsEmailConfirmed = false,
+                            Password = "$2b$10$Csfm.dYXdyffA7yrbP48ve16v46jBl0SvAlo3zRbhcXl13ArOyRja",
+                            RefreshTokenExpiryTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Role = "Admin",
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserName = "admin"
+                        });
                 });
 #pragma warning restore 612, 618
         }
