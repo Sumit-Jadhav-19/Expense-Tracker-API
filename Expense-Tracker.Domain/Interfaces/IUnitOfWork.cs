@@ -10,6 +10,7 @@ namespace Expense_Tracker.Domain.Interfaces
     public interface IUnitOfWork : IDisposable
     {
         IRepository<User> Users { get; }
+        IRepository<Category> Categories { get; }
         Task<int> CompleteAsync();
     }
 }

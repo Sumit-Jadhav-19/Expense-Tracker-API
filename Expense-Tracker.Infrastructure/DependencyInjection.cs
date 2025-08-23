@@ -4,7 +4,7 @@ using Expense_Tracker.Infrastructure.Data.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
+ 
 namespace Expense_Tracker.Infrastructure
 {
     public static class DependencyInjection

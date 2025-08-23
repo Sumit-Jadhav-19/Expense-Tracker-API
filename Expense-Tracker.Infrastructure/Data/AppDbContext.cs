@@ -12,6 +12,7 @@ namespace Expense_Tracker.Infrastructure.Data
     {
         public AppDbContext(DbContextOptions options) : base(options) { }
         public DbSet<User> Users => Set<User>();
+        public DbSet<Category> Categories => Set<Category>();
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

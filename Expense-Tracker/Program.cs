@@ -63,6 +63,7 @@ builder.Services.AddAuthentication(options =>
 });
 // Application services
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IAdminService, AdminService>();
 
 
 var app = builder.Build();
